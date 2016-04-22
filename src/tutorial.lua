@@ -45,7 +45,9 @@ print("Start Loading data...")
 local train, test = {}, {}
 
 -- Step 1 : Load file
-local ratesfile = io.open("ml-1m/ratings.dat", "r")
+--local ratesfile = io.open("ml-1m/ratings.dat", "r")
+
+local ratesfile = io.open("../data/movieLens/ratings-1M.dat", "r")
 
 -- Step 2 : Retrieve ratings
 for line in ratesfile:lines() do
